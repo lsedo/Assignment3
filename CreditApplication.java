@@ -17,7 +17,7 @@ public class CreditApplication {
 		lName = "Doe";
 		
 		acctNumber = -1;
-		status = -1;
+		status = 0;
 	}
 	
 	public Customer getApplicant()
@@ -68,6 +68,19 @@ public class CreditApplication {
 	public String getCustomerData()
 	{
 		return applicant.toString();
+	}
+	
+	public String toString()
+	{
+		String s = applicant.toString() + "\n";
+		
+		s += "APPLICATION DATA\n" 
+		  + "\tFirst name: " + fName + "\n"
+		  + "\tLast name: " + lName + "\n"
+		  + "\tAccount #: " + acctNumber + "\n"
+		  + "\tApplication status: " + status;
+		
+		return s;
 	}
 
 }

@@ -65,12 +65,6 @@ public class Customer {
 		phoneNumber = s;
 	}
 	
-	public void startApplication()
-	{
-		CreditApplication CA = new CreditApplication();
-		
-	}
-	
 	public String toString()
 	{
 		String s = "CUSTOMER DATA\n";
